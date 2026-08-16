@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto — Andes Gourmet</title>
+<meta name="description" content="Contacto, ubicación y horarios de Andes Gourmet. Realiza tu pedido de productos gourmet." />
+<link rel="icon" type="image/png" href="Fondo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="gear" aria-hidden="true">🌶</span>
+      <span class="brand-name">Andes Gourmet</span>
+      <span class="brand-tag mono">alimentos artesanales</span>
+    </a>
+    <nav class="ticket-nav" aria-label="Navegación principal">
+      <a class="ticket-btn" data-nav href="index.html">Inicio</a>
+      <a class="ticket-btn" data-nav href="servicios.html">Productos</a>
+      <a class="ticket-btn" data-nav href="nosotros.html">Nosotros</a>
+      <a class="ticket-btn" data-nav href="contacto.html">Contacto</a>
+    </nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menú ☰</button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil">
+    <a data-nav href="index.html">Inicio</a>
+    <a data-nav href="servicios.html">Productos y precios</a>
+    <a data-nav href="nosotros.html">Nosotros</a>
+    <a data-nav href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">Realiza tu pedido</p>
+        <h2>Hablemos sobre tu pedido</h2>
+        <p>¿Eres distribuidor, restaurante o consumidor final? Contáctanos directamente y te asesoramos en la mejor opción para ti.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-card">
+          <h3>Datos de contacto</h3>
+          <div class="info-line"><span>Dirección</span><span>Curicó, Región del Maule</span></div>
+          <div class="info-line"><span>Teléfono</span><span>+56 9 XXXX XXXX</span></div>
+          <div class="info-line"><span>Correo</span><span>contacto@andesgourmet.cl</span></div>
+          <div class="info-line"><span>Web</span><span>www.andesgourmet.cl</span></div>
+          <div class="info-line"><span>Lun–vie</span><span>9:00–18:00</span></div>
+          <div class="info-line"><span>Sábado</span><span>10:00–14:00</span></div>
+          <div class="info-line"><span>Domingo</span><span>Cerrado</span></div>
+
+          <h4 style="margin-top: 24px; margin-bottom: 12px;">Canales de venta</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Supermercados regionales</li>
+            <li>✓ Distribuidores mayoristas</li>
+            <li>✓ Tiendas gourmet especializadas</li>
+            <li>✓ Hoteles y restaurantes</li>
+            <li>✓ Comercio electrónico</li>
+            <li>✓ Consumidores finales</li>
+          </ul>
+        </div>
+
+        <form class="form-card" id="contact-form">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="company">Empresa / Emprendimiento</label>
+            <input type="text" id="company" name="company" />
+          </div>
+          <div class="field">
+            <label for="type">Tipo de cliente</label>
+            <select id="type" name="type">
+              <option>Consumidor final</option>
+              <option>Distribuidor</option>
+              <option>Supermercado</option>
+              <option>Hotel / Restaurante</option>
+              <option>Tienda especializada</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="product">Producto de interés</label>
+            <select id="product" name="product">
+              <option>Mermeladas artesanales</option>
+              <option>Salsas gourmet</option>
+              <option>Conservas premium</option>
+              <option>Aceites saborizados</option>
+              <option>Chutneys</option>
+              <option>Cajas regalo gourmet</option>
+              <option>Consulta comercial</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Cuéntanos tu consulta o necesidad</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <p class="form-note" id="form-status" hidden></p>
+          <p class="form-note">Este formulario es una demostración: no envía datos todavía.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">Información importante</p>
+        <h2>Opciones de compra</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <span class="num mono">01</span>
+          <h3>Compra al por Mayor</h3>
+          <p>Consulta precios especiales para distribuidores, supermercados y emprendimientos que requieran volúmenes significativos.</p>
+        </div>
+        <div class="card">
+          <span class="num mono">02</span>
+          <h3>Cajas de Regalo</h3>
+          <p>Personalizamos cajas gourmet para eventos corporativos, regalos especiales y ocasiones particulares.</p>
+        </div>
+        <div class="card">
+          <span class="num mono">03</span>
+          <h3>Comercio Electrónico</h3>
+          <p>Compra online con envío a todo el país. Productos embalados con cuidado para garantizar su llegada en perfecto estado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Andes Gourmet. Alimentos Artesanales.</span>
+    <a href="mailto:contacto@andesgourmet.cl">contacto@andesgourmet.cl</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
